@@ -19,7 +19,7 @@ namespace AlgorithmsAndComplexityAssignment1
                 
                   string[] lines = File.ReadAllLines("c:\\2981757.txt");
                   //text arrays need to be accessed in c drive
-                  int[] values = new int[10];
+                  int[] values = new int[256];
                   Console.WriteLine("This isn't sorted:");
 
             char userKeyPress;
