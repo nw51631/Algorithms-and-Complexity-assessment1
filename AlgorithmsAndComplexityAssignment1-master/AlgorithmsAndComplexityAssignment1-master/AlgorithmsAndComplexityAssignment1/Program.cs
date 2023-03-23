@@ -14,12 +14,16 @@ namespace AlgorithmsAndComplexityAssignment1
             public static void Main(string[] args)
             {
 
+                  Array theLines;
 
 
-                
-                  string[] lines = File.ReadAllLines("c:\\2981757.txt");
-                  //text arrays need to be accessed in c drive
-                  int[] values = new int[256];
+			      string[] lines = File.ReadAllLines("Road1-256.txt");
+			      lines = new string[lines.Length];
+			      lines = lines.ToArray();
+			      theLines = new string[lines.Length];
+			      Console.WriteLine(lines);
+                  
+			      int[] values = new int[theLines.Length];
                   Console.WriteLine("This isn't sorted:");
 
             char userKeyPress;
