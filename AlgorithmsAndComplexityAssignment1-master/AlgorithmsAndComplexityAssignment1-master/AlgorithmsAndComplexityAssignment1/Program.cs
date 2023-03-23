@@ -16,63 +16,51 @@ namespace AlgorithmsAndComplexityAssignment1
 
 
 
-                  
-                  
-
-
-
-
-
-
+                
                   string[] lines = File.ReadAllLines("c:\\2981757.txt");
-                  //add open with txt files
+                  //text arrays need to be accessed in c drive
                   int[] values = new int[10];
-                  Console.WriteLine("Not sorted:");
+                  Console.WriteLine("This isn't sorted:");
 
             char userKeyPress;
             do
             {
-                Console.WriteLine("Please input your number: ");
+                Console.WriteLine("Input Number:");
                 userKeyPress = Console.ReadKey().KeyChar;
             }
             while (values.Contains(userKeyPress));
                   if (values.Contains(userKeyPress))
                   {
-                        Console.WriteLine("Found");
+                        Console.WriteLine("Vaild");
                   }
                   else
-                        Console.WriteLine("Value not found");
+                        Console.WriteLine("Input invalid");
 
 
 
 
 
-            //bubble Sorting
+            //bubble sorting
             int[] bubbled = Sort.bubble(values);
                   Console.WriteLine("Bubble Sorted:");
                   for (int i = 0; i < bubbled.Length; i++)
                   {
                         Console.WriteLine(bubbled[i]);
                   }
-                  //sort into every 10th value
+                  //election sorting
                   int[] selected = Sort.selection(values);
-                  Console.WriteLine("Sorted:");
+                  Console.WriteLine("Selection Sorted:");
                   for (int i = 0; i < selected.Length; i++)
                   {
                         Console.WriteLine(selected[i]);
                   }
-                  //Insert sorting
+                  //insertion sorting
                   int[] inserted = Sort.insertion(values);
                   Console.WriteLine("Insertion Sorted:");
                   for (int i = 0; i < inserted.Length; i++)
                   {
                         Console.WriteLine(bubbled[i]);
                   }
-
-
-
-           
-
 
 
 
